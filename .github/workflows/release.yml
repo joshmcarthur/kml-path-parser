@@ -31,6 +31,16 @@ jobs:
         run: gem build kml-path-parser.gemspec
 
       - name: Publish to RubyGems
+        if: env.RUBYGEMS_API_KEY != ''
         run: gem push kml-path-parser-*.gem
+        env:
+          RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
+
+      - name: Missing RubyGems credentials
+        if: env.RUBYGEMS_API_KEY == ''
+        run: |
+          echo "::error::RUBYGEMS_API_KEY is not configured for this repository."
+          echo "Create an API key at https://rubygems.org/profile/api_keys and add it as a repository secret."
+          exit 1
         env:
           RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
