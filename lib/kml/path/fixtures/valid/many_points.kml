@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Many Points</name>
+    <Placemark>
+      <LineString>
+        <coordinates>
+          144.9600,-37.8100,0
+          144.9610,-37.8110,0
+          144.9620,-37.8120,0
+          144.9630,-37.8130,0
+          144.9640,-37.8140,0
+          144.9650,-37.8150,0
+          144.9660,-37.8160,0
+          144.9670,-37.8170,0
+          144.9680,-37.8180,0
+          144.9690,-37.8190,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

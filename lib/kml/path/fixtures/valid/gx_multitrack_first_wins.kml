@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+  <Document>
+    <name>Multi Track</name>
+    <Placemark>
+      <gx:MultiTrack>
+        <gx:Track>
+          <gx:coord>144.9631 -37.8136 0</gx:coord>
+          <gx:coord>144.9731 -37.8236 0</gx:coord>
+        </gx:Track>
+        <gx:Track>
+          <gx:coord>145.0000 -38.0000 0</gx:coord>
+          <gx:coord>145.0100 -38.0100 0</gx:coord>
+        </gx:Track>
+      </gx:MultiTrack>
+    </Placemark>
+  </Document>
+</kml>

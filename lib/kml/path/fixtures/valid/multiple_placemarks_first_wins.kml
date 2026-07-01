@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Multiple Placemarks</name>
+    <Placemark>
+      <name>First Trail</name>
+      <LineString>
+        <coordinates>
+          144.9631,-37.8136,0
+          144.9731,-37.8236,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Second Trail</name>
+      <LineString>
+        <coordinates>
+          145.0000,-38.0000,0
+          145.0100,-38.0100,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
