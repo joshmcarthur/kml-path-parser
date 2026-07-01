@@ -9,8 +9,15 @@ jobs:
   release:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    environment: release
+    permissions:
+      id-token: write
+      contents: read
+
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -27,10 +34,11 @@ jobs:
             exit 1
           fi
 
+      - name: Configure trusted publishing credentials
+        uses: rubygems/configure-rubygems-credentials@v2.1.0
+
       - name: Build gem
         run: gem build kml-path-parser.gemspec
 
       - name: Publish to RubyGems
         run: gem push kml-path-parser-*.gem
-        env:
-          GEM_HOST_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
