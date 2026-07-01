@@ -4,7 +4,7 @@ Extract path geometry from user-uploaded KML and KMZ files.
 
 `kml-path-parser` is a focused library for fitness and mapping apps that need to import route tracks from real-world exports (Google Earth, My Maps, QGIS, and similar tools). It is **not** a general-purpose KML codec: it only extracts `LineString` and `gx:Track` paths.
 
-Extracted from [VirtualTrails](https://github.com/joshmcarthur/virtualtrails).
+Extracted from [VirtualTrails](https://virtualtrails.app).
 
 ## Installation
 
